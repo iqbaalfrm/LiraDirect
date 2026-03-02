@@ -1,332 +1,941 @@
 ﻿<!DOCTYPE html>
 
-<html lang="id"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>LiraDirect - Transfer Lira Terpercaya untuk Bisnis Pariwisata</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#a78452",
-                        "background-light": "#f7f7f6",
-                        "background-dark": "#1c1a16",
-                        "neutral-dark": "#2d2d2d",
-                    },
-                    fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
-        }
-    </script>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>LiraDirect - Transfer Lira Terpercaya untuk Bisnis Pariwisata</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#a78452",
+            "background-light": "#f7f7f6",
+            "background-dark": "#1c1a16",
+            "neutral-dark": "#2d2d2d",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
 </head>
-<body class="font-display bg-background-light dark:bg-background-dark text-neutral-dark dark:text-slate-100 antialiased">
-<!-- Top Navigation -->
-<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
-<div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-<div class="flex items-center gap-3">
-<div class="bg-primary p-1.5 rounded-lg">
-<span class="material-symbols-outlined text-white text-2xl">account_balance_wallet</span>
-</div>
-<h2 class="text-xl font-extrabold tracking-tight text-neutral-dark dark:text-white">Lira<span class="text-primary">Direct</span></h2>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#layanan">Layanan</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#kurs">Kurs</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#testimoni">Testimoni</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#faq">FAQ</a>
-</nav>
-<div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-neutral-800 cursor-pointer transition-colors group">
-<span class="material-symbols-outlined text-xl text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">language</span>
-<span class="text-sm font-bold text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">ID</span>
-<span class="material-symbols-outlined text-sm text-slate-400">expand_more</span>
-</div>
-<button class="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-6 py-2.5 rounded-lg transition-all shadow-lg shadow-primary/20">
-    Hubungi Kami
-</button></div>
-</div>
-</header>
-<main>
-<!-- Hero Section -->
-<section class="relative overflow-hidden dark:bg-background-dark py-16 lg:py-24" style="background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYqszE5NdIQYghhmhvZwV6wCAvuEdILo-qMlZyRrEfs1vw_S-sOf2rRZIXeBLwbEE4TouCzdEjfNYe6EuI_hEo4jaHIkP87JT-I4PU2DdtaOwaWPOWHj7T8rL10f9ENVZX13kTfIAvzhSS8q5Ak_kqA3mkTp8pg_c-3usRkIC4Qy5KqfJ7eKHKVx55RjFT6c_1olQUJ8gQKIaxc1efDJz9QFDs_AO8jxmiydMcXN4HNMlAVmQaOJwmfjsvCARcteNQG4WNxJhkUHI'); background-size: cover; background-position: center;">
-<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center gap-12">
-<div class="max-w-3xl space-y-8 text-center">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-bold uppercase tracking-wider">
-<span class="material-symbols-outlined text-sm">verified_user</span> TEROBOSAN PERTAMA DI INDONESIA
-                    </div>
-<h1 class="text-4xl lg:text-6xl font-extrabold leading-[1.1] text-neutral-dark dark:text-white">
-                        Transfer Lira untuk Agen <span class="text-primary">Tour &amp; Hotel</span> di Turki
-                    </h1>
-<p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
-                        Solusi pembayaran tercepat dan terpercaya untuk bisnis pariwisata Anda di Turki. Kurs kompetitif dengan biaya transparan tanpa biaya tersembunyi.
-                    </p>
-<!-- Exchange Calculator -->
-<div class="bg-white dark:bg-neutral-800 p-2 rounded-2xl shadow-2xl border border-primary/10 max-w-lg mx-auto">
-<div class="flex flex-col sm:flex-row items-stretch gap-2">
-<div class="flex-1 relative group">
-<span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">IDR</span>
-<input class="w-full pl-14 pr-4 py-4 rounded-xl border-none bg-background-light dark:bg-background-dark focus:ring-2 focus:ring-primary transition-all font-semibold" placeholder="10.000.000" type="number"/>
-</div>
-<div class="flex items-center justify-center p-2">
-<span class="material-symbols-outlined text-primary bg-primary/10 rounded-full p-2">swap_horiz</span>
-</div>
-<div class="flex-1 relative group">
-<span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">TRY</span>
-<input class="w-full pl-14 pr-4 py-4 rounded-xl border-none bg-background-light dark:bg-background-dark font-semibold" readonly="" type="number" value="20618"/>
-</div>
-</div>
-<div class="mt-2 p-4 flex items-center justify-between text-sm">
-<div class="flex items-center gap-2 text-slate-500">
-<span class="material-symbols-outlined text-base">info</span>
-<span>Kurs: 1 TRY = Rp 485</span>
-</div>
-<button class="text-primary font-bold hover:underline">Lihat Detail Biaya</button>
-</div>
-</div>
-</div>
-</div>
-</section><div class="w-full overflow-hidden leading-[0] bg-background-light dark:bg-neutral-900">
-<svg class="relative block w-full h-[60px] fill-white dark:fill-background-dark" preserveaspectratio="none" viewbox="0 0 1200 120">
-<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
-</svg>
-</div>
-<!-- Stats Section -->
-<section class="bg-background-light dark:bg-neutral-900 pb-12">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-<div class="text-center space-y-1">
-<p class="text-3xl font-extrabold text-neutral-dark dark:text-white">500M+</p>
-<p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Transaksi (IDR)</p>
-</div>
-<div class="text-center space-y-1 border-l border-primary/20">
-<p class="text-3xl font-extrabold text-neutral-dark dark:text-white">120+</p>
-<p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Partner Agen</p>
-</div>
-<div class="text-center space-y-1 border-l border-primary/20">
-<p class="text-3xl font-extrabold text-neutral-dark dark:text-white">4.9/5</p>
-<p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Rating Layanan</p>
-</div>
-<div class="text-center space-y-1 border-l border-primary/20">
-<p class="text-3xl font-extrabold text-neutral-dark dark:text-white">24/7</p>
-<p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Customer Support</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Why Choose Us -->
-<section class="bg-white dark:bg-background-dark pt-12 pb-24" id="layanan">
-<div class="max-w-7xl mx-auto px-6 lg:px-12">
-<div class="text-center max-w-2xl mx-auto mb-20 space-y-4">
-<h2 class="text-primary font-bold uppercase tracking-widest text-sm">Mengapa LiraDirect?</h2>
-<p class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white">Standar Baru Pembayaran B2B Travel ke Turki</p>
-</div>
-<div class="grid md:grid-cols-3 gap-10">
-<div class="group p-8 rounded-3xl border border-primary/5 bg-background-light dark:bg-neutral-800/50 hover:bg-white dark:hover:bg-neutral-800 transition-all hover:shadow-2xl hover:shadow-primary/5">
-<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
-<span class="material-symbols-outlined text-3xl">trending_down</span>
-</div>
-<h3 class="text-xl font-bold mb-3">Kurs Kompetitif</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Kami menawarkan kurs harian yang bersaing langsung dengan rate pasar untuk memastikan profitabilitas bisnis Anda tetap terjaga.</p>
-</div>
-<div class="group p-8 rounded-3xl border border-primary/5 bg-background-light dark:bg-neutral-800/50 hover:bg-white dark:hover:bg-neutral-800 transition-all hover:shadow-2xl hover:shadow-primary/5">
-<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
-<span class="material-symbols-outlined text-3xl">verified_user</span>
-</div>
-<h3 class="text-xl font-bold mb-3">Keamanan Terjamin</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Setiap transaksi diproses melalui kanal perbankan resmi dengan enkripsi tingkat tinggi untuk keamanan data dan dana Anda.</p>
-</div>
-<div class="group p-8 rounded-3xl border border-primary/5 bg-background-light dark:bg-neutral-800/50 hover:bg-white dark:hover:bg-neutral-800 transition-all hover:shadow-2xl hover:shadow-primary/5">
-<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
-<span class="material-symbols-outlined text-3xl">visibility</span>
-</div>
-<h3 class="text-xl font-bold mb-3">Biaya Transparan</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Tidak ada kejutan. Semua biaya administrasi dan kurs konversi ditampilkan secara jujur di depan sebelum Anda melakukan transfer.</p>
-</div>
-</div>
-</div>
-</section><div class="w-full overflow-hidden leading-[0] bg-background-light dark:bg-neutral-900/50">
-<svg class="relative block w-full h-[60px] fill-white dark:fill-background-dark" preserveaspectratio="none" viewbox="0 0 1200 120">
-<path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.83C1132.19,118.92,1055.71,111.31,985.66,92.83Z"></path>
-</svg>
-</div>
-<!-- Flow Section -->
-<section class="py-24 bg-background-light dark:bg-neutral-900/50">
-<div class="max-w-7xl mx-auto px-6 lg:px-12">
-<div class="text-center max-w-2xl mx-auto mb-20 space-y-4">
-<h2 class="text-primary font-bold uppercase tracking-widest text-sm">Proses Mudah</h2>
-<p class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white">Cara Kerja Transfer Kami</p>
-</div>
-<div class="grid md:grid-cols-3 gap-12 lg:gap-20 justify-items-center">
-<!-- Step 1 -->
-<div class="space-y-6 flex flex-col items-center text-center">
-<div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20">
-<span class="text-white font-extrabold text-xl">1</span>
-</div>
-<div class="space-y-3">
-<h3 class="text-2xl font-bold text-neutral-dark dark:text-white">Konsultasi</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+
+<body
+  class="font-display bg-background-light dark:bg-background-dark text-neutral-dark dark:text-slate-100 antialiased">
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
+      <div class="flex items-center gap-3">
+        <div class="bg-primary p-1.5 rounded-lg">
+          <span class="material-symbols-outlined text-white text-2xl">account_balance_wallet</span>
+        </div>
+        <h2 class="text-xl font-extrabold tracking-tight text-neutral-dark dark:text-white">Lira<span
+            class="text-primary">Direct</span></h2>
+      </div>
+      <nav class="hidden md:flex items-center gap-10">
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#layanan">Layanan</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#kurs">Kurs</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#testimoni">Testimoni</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#faq">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <div
+          class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-neutral-800 cursor-pointer transition-colors group">
+          <span
+            class="material-symbols-outlined text-xl text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">language</span>
+          <span
+            class="text-sm font-bold text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">ID</span>
+          <span class="material-symbols-outlined text-sm text-slate-400">expand_more</span>
+        </div>
+        <button onclick="toggleWAModal()"
+          class="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-6 py-2.5 rounded-lg transition-all shadow-lg shadow-primary/20">
+          Hubungi Kami
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden dark:bg-background-dark py-16 lg:py-24"
+      style="background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYqszE5NdIQYghhmhvZwV6wCAvuEdILo-qMlZyRrEfs1vw_S-sOf2rRZIXeBLwbEE4TouCzdEjfNYe6EuI_hEo4jaHIkP87JT-I4PU2DdtaOwaWPOWHj7T8rL10f9ENVZX13kTfIAvzhSS8q5Ak_kqA3mkTp8pg_c-3usRkIC4Qy5KqfJ7eKHKVx55RjFT6c_1olQUJ8gQKIaxc1efDJz9QFDs_AO8jxmiydMcXN4HNMlAVmQaOJwmfjsvCARcteNQG4WNxJhkUHI'); background-size: cover; background-position: center;">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center gap-12">
+        <div class="max-w-3xl space-y-8 text-center">
+          <div data-hero-anim
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-bold uppercase tracking-wider">
+            <span class="material-symbols-outlined text-sm">verified_user</span> Terpercaya sejak 2018
+          </div>
+          <h1 data-hero-anim
+            class="text-4xl lg:text-6xl font-extrabold leading-[1.1] text-neutral-dark dark:text-white">
+            Transfer Lira untuk Agen <span class="text-primary">Tour &amp; Hotel</span> di Turki
+          </h1>
+          <p data-hero-anim class="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
+            Solusi pembayaran tercepat dan terpercaya untuk bisnis pariwisata Anda di Turki. Kurs kompetitif dengan
+            biaya transparan tanpa biaya tersembunyi.
+          </p>
+          <!-- Exchange Calculator -->
+          <div data-hero-anim data-tilt
+            class="bg-white dark:bg-neutral-800 p-2 rounded-2xl shadow-2xl border border-primary/10 max-w-lg mx-auto hover-lift">
+            <div class="flex flex-col sm:flex-row items-stretch gap-2">
+              <div class="flex-1 relative group">
+                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">IDR</span>
+                <input
+                  class="w-full pl-14 pr-4 py-4 rounded-xl border-none bg-background-light dark:bg-background-dark focus:ring-2 focus:ring-primary transition-all font-semibold"
+                  placeholder="10.000.000" type="number" />
+              </div>
+              <div class="flex items-center justify-center p-2">
+                <span
+                  class="material-symbols-outlined text-primary bg-primary/10 rounded-full p-2 hover:rotate-180 transition-transform duration-500 cursor-pointer">swap_horiz</span>
+              </div>
+              <div class="flex-1 relative group">
+                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">TRY</span>
+                <input
+                  class="w-full pl-14 pr-4 py-4 rounded-xl border-none bg-background-light dark:bg-background-dark font-semibold"
+                  readonly="" type="number" value="20618" />
+              </div>
+            </div>
+            <div class="mt-2 p-4 flex items-center justify-between text-sm">
+              <div class="flex items-center gap-2 text-slate-500">
+                <span class="material-symbols-outlined text-base">info</span>
+                <span>Kurs: 1 TRY = Rp 485</span>
+              </div>
+              <button class="text-primary font-bold hover:underline">Lihat Detail Biaya</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="w-full overflow-hidden leading-[0] bg-background-light dark:bg-neutral-900">
+      <svg class="relative block w-full h-[60px] fill-white dark:fill-background-dark" preserveaspectratio="none"
+        viewbox="0 0 1200 120">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+        </path>
+      </svg>
+    </div>
+    <!-- Stats Section -->
+    <section class="bg-background-light dark:bg-neutral-900 pb-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center space-y-1 reveal delay-1">
+            <p class="text-3xl font-extrabold text-neutral-dark dark:text-white" data-count="500" data-suffix="M+">0</p>
+            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Transaksi (IDR)</p>
+          </div>
+          <div class="text-center space-y-1 border-l border-primary/20 reveal delay-2">
+            <p class="text-3xl font-extrabold text-neutral-dark dark:text-white" data-count="120" data-suffix="+">0</p>
+            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Partner Agen</p>
+          </div>
+          <div class="text-center space-y-1 border-l border-primary/20 reveal delay-3">
+            <p class="text-3xl font-extrabold text-neutral-dark dark:text-white" data-count="4.9" data-suffix="/5">0</p>
+            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Rating Layanan</p>
+          </div>
+          <div class="text-center space-y-1 border-l border-primary/20 reveal delay-4">
+            <p class="text-3xl font-extrabold text-neutral-dark dark:text-white">24/7</p>
+            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Customer Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us -->
+    <section class="bg-white dark:bg-background-dark pt-12 pb-24" id="layanan">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-20 space-y-4 reveal">
+          <h2 class="text-primary font-bold uppercase tracking-widest text-sm">Mengapa LiraDirect?</h2>
+          <p class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white">Standar Baru Pembayaran B2B
+            Travel ke Turki</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-10">
+          <div
+            class="group p-8 rounded-3xl border border-primary/5 bg-background-light dark:bg-neutral-800/50 hover:bg-white dark:hover:bg-neutral-800 transition-all hover:shadow-2xl hover:shadow-primary/5 hover-lift reveal delay-1">
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white group-hover:rotate-6 transition-all duration-500">
+              <span class="material-symbols-outlined text-3xl">trending_down</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Kurs Kompetitif</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Kami menawarkan kurs harian yang bersaing
+              langsung dengan rate pasar untuk memastikan profitabilitas bisnis Anda tetap terjaga.</p>
+          </div>
+          <div
+            class="group p-8 rounded-3xl border border-primary/5 bg-background-light dark:bg-neutral-800/50 hover:bg-white dark:hover:bg-neutral-800 transition-all hover:shadow-2xl hover:shadow-primary/5 hover-lift reveal delay-2">
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white group-hover:rotate-6 transition-all duration-500">
+              <span class="material-symbols-outlined text-3xl">verified_user</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Keamanan Terjamin</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Setiap transaksi diproses melalui kanal
+              perbankan resmi dengan enkripsi tingkat tinggi untuk keamanan data dan dana Anda.</p>
+          </div>
+          <div
+            class="group p-8 rounded-3xl border border-primary/5 bg-background-light dark:bg-neutral-800/50 hover:bg-white dark:hover:bg-neutral-800 transition-all hover:shadow-2xl hover:shadow-primary/5 hover-lift reveal delay-3">
+            <div
+              class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white group-hover:rotate-6 transition-all duration-500">
+              <span class="material-symbols-outlined text-3xl">visibility</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Biaya Transparan</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Tidak ada kejutan. Semua biaya administrasi
+              dan kurs konversi ditampilkan secara jujur di depan sebelum Anda melakukan transfer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="w-full overflow-hidden leading-[0] bg-background-light dark:bg-neutral-900/50">
+      <svg class="relative block w-full h-[60px] fill-white dark:fill-background-dark" preserveaspectratio="none"
+        viewbox="0 0 1200 120">
+        <path
+          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.83C1132.19,118.92,1055.71,111.31,985.66,92.83Z">
+        </path>
+      </svg>
+    </div>
+    <!-- Flow Section -->
+    <section class="py-24 bg-background-light dark:bg-neutral-900/50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-20 space-y-4 reveal">
+          <h2 class="text-primary font-bold uppercase tracking-widest text-sm">Proses Mudah</h2>
+          <p class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white">Cara Kerja Transfer Kami</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-12 lg:gap-20 justify-items-center">
+          <!-- Step 1 -->
+          <div class="space-y-6 flex flex-col items-center text-center reveal delay-1">
+            <div
+              class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20 hover:scale-110 hover:rotate-6 transition-all duration-300">
+              <span class="text-white font-extrabold text-xl">1</span>
+            </div>
+            <div class="space-y-3">
+              <h3 class="text-2xl font-bold text-neutral-dark dark:text-white">Konsultasi</h3>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                 Hubungi tim kami via WhatsApp. Sampaikan kebutuhan nominal lira dan tujuan transfer.
-            </p>
-</div>
-</div>
-<!-- Step 2 -->
-<div class="space-y-6 flex flex-col items-center text-center">
-<div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20">
-<span class="text-white font-extrabold text-xl">2</span>
-</div>
-<div class="space-y-3">
-<h3 class="text-2xl font-bold text-neutral-dark dark:text-white">Pembayaran Agen Tour (LA)</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+              </p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="space-y-6 flex flex-col items-center text-center reveal delay-2">
+            <div
+              class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20 hover:scale-110 hover:rotate-6 transition-all duration-300">
+              <span class="text-white font-extrabold text-xl">2</span>
+            </div>
+            <div class="space-y-3">
+              <h3 class="text-2xl font-bold text-neutral-dark dark:text-white">Pembayaran Agen Tour (LA)</h3>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                 Lakukan transfer Rupiah ke rekening resmi kami dengan kurs kompetitif dan transparan.
-            </p>
-</div>
-</div>
-<!-- Step 3 -->
-<div class="space-y-6 flex flex-col items-center text-center">
-<div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20">
-<span class="text-white font-extrabold text-xl">3</span>
-</div>
-<div class="space-y-3">
-<h3 class="text-2xl font-bold text-neutral-dark dark:text-white">Tuntas</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+              </p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="space-y-6 flex flex-col items-center text-center reveal delay-3">
+            <div
+              class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20 hover:scale-110 hover:rotate-6 transition-all duration-300">
+              <span class="text-white font-extrabold text-xl">3</span>
+            </div>
+            <div class="space-y-3">
+              <h3 class="text-2xl font-bold text-neutral-dark dark:text-white">Tuntas</h3>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                 Lira dikirim ke penerima. Bukti transfer valid langsung kami kirimkan sebagai konfirmasi.
-            </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Lira Cash Promo Section -->
-<div class="w-full overflow-hidden leading-[0] bg-white dark:bg-background-dark">
-<svg class="relative block w-full h-[60px] fill-background-light dark:fill-neutral-900/50" preserveaspectratio="none" viewbox="0 0 1200 120">
-<path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5,73.84-4.36,147.54,16.88,218.2,35.26,69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"></path>
-</svg>
-</div><section class="py-16">
-<div class="max-w-5xl mx-auto px-6">
-<div class="bg-neutral-dark dark:bg-neutral-800 rounded-[2.5rem] p-8 lg:p-16 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] -mr-32 -mt-32 rounded-full"></div>
-<div class="relative flex flex-col lg:flex-row items-center gap-10">
-<div class="flex-1 space-y-6 text-center lg:text-left">
-<div class="inline-block bg-primary px-4 py-1.5 rounded-full text-white text-xs font-bold uppercase">Spesial Promo</div>
-<h2 class="text-3xl lg:text-5xl font-extrabold text-white leading-tight">Butuh Lira Cash di Istanbul?</h2>
-<p class="text-slate-300 text-lg">Selain transfer bank, kami menyediakan layanan pengiriman uang tunai langsung ke kantor agen atau hotel Anda di Turki.</p>
-<button class="bg-white hover:bg-slate-100 text-neutral-dark px-10 py-4 rounded-xl font-bold text-lg transition-all">Hubungi WhatsApp</button>
-</div>
-<div class="flex-shrink-0">
-<div class="bg-white/5 backdrop-blur-sm p-4 rounded-3xl border border-white/10 rotate-3">
-<img class="w-64 h-64 object-cover rounded-2xl shadow-2xl" data-alt="Turkish Lira banknotes closeup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEAJ6OREue1pkYdAeYtx-DnZzzSjON6mHJJKeQn-hcxgLGz3a0jb0-OchkuSMC70BvEvu6G08NedpR0TDTD_Ppj33cOqIZBKmzY_7FlUH22Nxr-YFlLL7-IqRwDpZINzfY9ir343S0hfOJ1M-SkGrAXJyORHuo16LcXeFwqdl-a0C1wg8d-tvng5nrcDDK9iJ60OjP8V3kvyUyXmC8mPRWpMIdE9tbmTLuE-WqCCNZkAWgp-tD2JkHDhE8z-DxXFKoKP1sD0FKZXg"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- FAQ Section -->
-<section class="py-24 bg-white dark:bg-background-dark" id="faq">
-<div class="max-w-4xl mx-auto px-6">
-<div class="text-center mb-16 space-y-4">
-<h2 class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white">Pertanyaan Sering Diajukan</h2>
-<p class="text-slate-500">Pelajari lebih lanjut tentang bagaimana kami membantu operasional travel Anda.</p>
-</div>
-<div class="space-y-4">
-<div class="group border border-slate-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all">
-<button class="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-<span class="font-bold text-lg dark:text-white">Berapa lama waktu transfer ke bank Turki?</span>
-<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
-</button>
-<div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
-                            Rata-rata transfer kami selesai dalam waktu 5-30 menit setelah dana kami terima di Indonesia, asalkan dilakukan selama jam operasional bank Turki.
-                        </div>
-</div>
-<div class="group border border-slate-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all">
-<button class="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-<span class="font-bold text-lg dark:text-white">Apakah ada limit harian untuk transfer?</span>
-<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
-</button>
-<div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
-                            Untuk agen terverifikasi, kami memberikan limit harian yang cukup fleksibel hingga Rp 500 Juta per hari. Untuk jumlah lebih besar, tim kami akan membantu melalui jalur prioritas.
-                        </div>
-</div>
-<div class="group border border-slate-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all">
-<button class="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-<span class="font-bold text-lg dark:text-white">Bank apa saja yang didukung di Turki?</span>
-<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
-</button>
-<div class="px-6 pb-6 text-slate-600 dark:text-slate-400">
-                            Kami mendukung transfer ke semua bank komersial utama di Turki, termasuk Ziraat Bankası, VakıfBank, İş Bankası, Garanti BBVA, dan Akbank.
-                        </div>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-</main>
-<!-- Minimalist Footer -->
-<footer class="bg-neutral-dark dark:bg-background-dark text-white py-20 border-t border-white/5">
-<div class="max-w-7xl mx-auto px-6 lg:px-12">
-<div class="grid md:grid-cols-4 gap-12 mb-16">
-<div class="space-y-6">
-<div class="flex items-center gap-3">
-<div class="bg-primary p-1 rounded-lg">
-<span class="material-symbols-outlined text-white text-xl">account_balance_wallet</span>
-</div>
-<h2 class="text-xl font-extrabold tracking-tight">Lira<span class="text-primary">Direct</span></h2>
-</div>
-<p class="text-slate-400 text-sm leading-relaxed">
-                        LiraDirect adalah platform remitansi khusus korporat yang berfokus pada efisiensi pembayaran antara agen perjalanan di Indonesia dan penyedia layanan di Turki.
-                    </p>
-</div>
-<div>
-<h5 class="font-bold mb-6">Layanan</h5>
-<ul class="space-y-4 text-sm text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="#">Transfer Lira B2B</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Lira Cash Delivery</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Konsultasi Bisnis Turki</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Partnership Program</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-bold mb-6">Perusahaan</h5>
-<ul class="space-y-4 text-sm text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="#">Tentang Kami</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Hubungi Kami</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Kebijakan Privasi</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Syarat &amp; Ketentuan</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-bold mb-6">Media Sosial</h5>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-all" href="#">
-<span class="material-symbols-outlined text-sm">public</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-all" href="#">
-<span class="material-symbols-outlined text-sm">alternate_email</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-all" href="#">
-<span class="material-symbols-outlined text-sm">share</span>
-</a>
-</div>
-</div>
-</div>
-<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-<p class="text-xs text-slate-500">© 2025 LiraDirect. Seluruh Hak Cipta Dilindungi.</p>
-<div class="flex gap-6 text-xs text-slate-500">
-<p>Berlisensi oleh OJK Indonesia</p>
-<p>Compliance with BDDK Turkey</p>
-</div>
-</div>
-</div>
-</footer>
-<style>
-        .fill-1 { font-variation-settings: 'FILL' 1; }
-    </style>
-</body></html>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Lira Cash Promo Section -->
+    <div class="w-full overflow-hidden leading-[0] bg-white dark:bg-background-dark">
+      <svg class="relative block w-full h-[60px] fill-background-light dark:fill-neutral-900/50"
+        preserveaspectratio="none" viewbox="0 0 1200 120">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5,73.84-4.36,147.54,16.88,218.2,35.26,69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z">
+        </path>
+      </svg>
+    </div>
+    <section class="py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <div
+          class="bg-neutral-dark dark:bg-neutral-800 rounded-[2.5rem] p-8 lg:p-16 relative overflow-hidden reveal-scale">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] -mr-32 -mt-32 rounded-full"></div>
+          <div class="relative flex flex-col lg:flex-row items-center gap-10">
+            <div class="flex-1 space-y-6 text-center lg:text-left reveal-left">
+              <div class="inline-block bg-primary px-4 py-1.5 rounded-full text-white text-xs font-bold uppercase">
+                Spesial Promo</div>
+              <h2 class="text-3xl lg:text-5xl font-extrabold text-white leading-tight">Butuh Lira Cash di Istanbul?</h2>
+              <p class="text-slate-300 text-lg">Selain transfer bank, kami menyediakan layanan pengiriman uang tunai
+                langsung ke kantor agen atau hotel Anda di Turki.</p>
+              <button
+                class="bg-white hover:bg-slate-100 text-neutral-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 hover:shadow-2xl active:scale-95"
+                onclick="toggleWAModal()">Hubungi WhatsApp</button>
+            </div>
+            <div class="flex-shrink-0 reveal-right">
+              <div
+                class="bg-white/5 backdrop-blur-sm p-4 rounded-3xl border border-white/10 rotate-3 hover:rotate-0 transition-transform duration-700 anim-float">
+                <img class="w-64 h-64 object-cover rounded-2xl shadow-2xl" data-alt="Turkish Lira banknotes closeup"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEAJ6OREue1pkYdAeYtx-DnZzzSjON6mHJJKeQn-hcxgLGz3a0jb0-OchkuSMC70BvEvu6G08NedpR0TDTD_Ppj33cOqIZBKmzY_7FlUH22Nxr-YFlLL7-IqRwDpZINzfY9ir343S0hfOJ1M-SkGrAXJyORHuo16LcXeFwqdl-a0C1wg8d-tvng5nrcDDK9iJ60OjP8V3kvyUyXmC8mPRWpMIdE9tbmTLuE-WqCCNZkAWgp-tD2JkHDhE8z-DxXFKoKP1sD0FKZXg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="py-24 bg-white dark:bg-background-dark" id="faq">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-16 space-y-4 reveal">
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white">Pertanyaan Sering Diajukan
+          </h2>
+          <p class="text-slate-500">Pelajari lebih lanjut tentang bagaimana kami membantu operasional travel Anda.</p>
+        </div>
+        <div class="space-y-4">
+          <div
+            class="group border border-slate-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover-lift reveal delay-1">
+            <button class="faq-toggle w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <span class="font-bold text-lg dark:text-white group-hover:text-primary transition-colors">Berapa lama
+                waktu transfer ke bank Turki?</span>
+              <span
+                class="material-symbols-outlined text-primary faq-icon transition-transform duration-300">expand_more</span>
+            </button>
+            <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-400">
+              Rata-rata transfer kami selesai dalam waktu 5-30 menit setelah dana kami terima di Indonesia, asalkan
+              dilakukan selama jam operasional bank Turki.
+            </div>
+          </div>
+          <div
+            class="group border border-slate-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover-lift reveal delay-2">
+            <button class="faq-toggle w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <span class="font-bold text-lg dark:text-white group-hover:text-primary transition-colors">Apakah ada
+                limit harian untuk transfer?</span>
+              <span
+                class="material-symbols-outlined text-primary faq-icon transition-transform duration-300">expand_more</span>
+            </button>
+            <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-400">
+              Untuk agen terverifikasi, kami memberikan limit harian yang cukup fleksibel hingga Rp 500 Juta per hari.
+              Untuk jumlah lebih besar, tim kami akan membantu melalui jalur prioritas.
+            </div>
+          </div>
+          <div
+            class="group border border-slate-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover-lift reveal delay-3">
+            <button class="faq-toggle w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <span class="font-bold text-lg dark:text-white group-hover:text-primary transition-colors">Bank apa saja
+                yang didukung di Turki?</span>
+              <span
+                class="material-symbols-outlined text-primary faq-icon transition-transform duration-300">expand_more</span>
+            </button>
+            <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-400">
+              Kami mendukung transfer ke semua bank komersial utama di Turki, termasuk Ziraat Bankası, VakıfBank, İş
+              Bankası, Garanti BBVA, dan Akbank.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+  </main>
+  <!-- Minimalist Footer -->
+  <footer class="bg-neutral-dark dark:bg-background-dark text-white py-20 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid md:grid-cols-4 gap-12 mb-16">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="bg-primary p-1 rounded-lg">
+              <span class="material-symbols-outlined text-white text-xl">account_balance_wallet</span>
+            </div>
+            <h2 class="text-xl font-extrabold tracking-tight">Lira<span class="text-primary">Direct</span></h2>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            LiraDirect adalah platform remitansi khusus korporat yang berfokus pada efisiensi pembayaran antara agen
+            perjalanan di Indonesia dan penyedia layanan di Turki.
+          </p>
+        </div>
+        <div>
+          <h5 class="font-bold mb-6">Layanan</h5>
+          <ul class="space-y-4 text-sm text-slate-400">
+            <li><a class="hover:text-primary transition-colors" href="#">Transfer Lira B2B</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Lira Cash Delivery</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Konsultasi Bisnis Turki</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Partnership Program</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-6">Perusahaan</h5>
+          <ul class="space-y-4 text-sm text-slate-400">
+            <li><a class="hover:text-primary transition-colors" href="#">Tentang Kami</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Hubungi Kami</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Kebijakan Privasi</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Syarat &amp; Ketentuan</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-6">Media Sosial</h5>
+          <div class="flex gap-4">
+            <a class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-all"
+              href="#">
+              <span class="material-symbols-outlined text-sm">public</span>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-all"
+              href="#">
+              <span class="material-symbols-outlined text-sm">alternate_email</span>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-all"
+              href="#">
+              <span class="material-symbols-outlined text-sm">share</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-xs text-slate-500">© 2025 LiraDirect. Seluruh Hak Cipta Dilindungi.</p>
+        <div class="flex gap-6 text-xs text-slate-500">
+          <p>Berlisensi oleh OJK Indonesia</p>
+          <p>Compliance with BDDK Turkey</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <style>
+    .fill-1 {
+      font-variation-settings: 'FILL' 1;
+    }
+
+    /* ===== KEYFRAME ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-60px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(60px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes floatSlow {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-14px) rotate(1.5deg);
+      }
+    }
+
+    @keyframes pulseRing {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45);
+      }
+
+      70% {
+        box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200% center;
+      }
+
+      100% {
+        background-position: 200% center;
+      }
+    }
+
+    @keyframes countPulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.08);
+      }
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* ===== ANIMATION UTILITY CLASSES ===== */
+    .anim-fade-up {
+      animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .anim-fade-down {
+      animation: fadeInDown 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .anim-scale-in {
+      animation: scaleIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .anim-slide-left {
+      animation: slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .anim-slide-right {
+      animation: slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .anim-float {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+
+    .wa-pulse {
+      animation: pulseRing 2.5s infinite;
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal-left.revealed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal-right.revealed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.85);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal-scale.revealed {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Stagger delays */
+    .delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    .delay-4 {
+      transition-delay: 0.4s;
+    }
+
+    .delay-5 {
+      transition-delay: 0.5s;
+    }
+
+    /* ===== FAQ ACCORDION ===== */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.4s ease;
+      opacity: 0;
+    }
+
+    .faq-answer.open {
+      opacity: 1;
+    }
+
+    .faq-icon.rotated {
+      transform: rotate(180deg);
+    }
+
+    /* ===== HOVER LIFT ===== */
+    .hover-lift {
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .hover-lift:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ===== NAVBAR SCROLL ===== */
+    header.scrolled {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      border-bottom-color: transparent;
+    }
+
+    /* ===== SMOOTH SCROLLBAR ===== */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #d1d5db;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #9ca3af;
+    }
+
+    /* ===== MODAL ANIMATION ===== */
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: scale(0.92) translateY(16px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .animate-modal-in {
+      animation: modalIn 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+  </style>
+
+  <!-- Floating WhatsApp Button -->
+  <button onclick="toggleWAModal()" id="whatsapp-float" aria-label="Buka WhatsApp support"
+    class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform wa-pulse cursor-pointer">
+    <svg fill="white" width="30" height="30" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </button>
+
+  <!-- WA Modal -->
+  <div id="wa-modal" class="fixed inset-0 z-[300] hidden items-center justify-center bg-black/50 backdrop-blur-md p-4"
+    onclick="closeWAModalOnBackdrop(event)">
+    <div
+      class="w-full max-w-md bg-white dark:bg-neutral-800 border border-slate-200 dark:border-neutral-700 rounded-2xl p-6 shadow-2xl animate-modal-in relative overflow-hidden">
+      <!-- Accent bar -->
+      <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary/80 to-primary"></div>
+      <div class="flex justify-between items-start mb-5">
+        <div>
+          <p class="text-primary text-xs font-bold uppercase tracking-widest mb-1">
+            WhatsApp Support
+          </p>
+          <h3 class="text-xl font-bold text-neutral-dark dark:text-white">
+            Pilih Admin Layanan
+          </h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+            Pilih salah satu admin kami di bawah.
+          </p>
+          <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">
+            Respons cepat, pilih admin yang sedang tersedia.
+          </p>
+        </div>
+        <button onclick="toggleWAModal()" aria-label="Tutup popup WhatsApp"
+          class="w-9 h-9 rounded-full bg-slate-100 dark:bg-neutral-700 border border-slate-200 dark:border-neutral-600 flex items-center justify-center text-slate-400 hover:text-neutral-dark dark:hover:text-white hover:bg-slate-200 dark:hover:bg-neutral-600 transition-all">
+          <span class="material-symbols-outlined text-lg">close</span>
+        </button>
+      </div>
+      <div class="space-y-2">
+        <a data-wa-number="6289616448947" href="https://wa.me/6289616448947" target="_blank" rel="noopener noreferrer"
+          class="flex justify-between items-center p-4 border border-slate-100 dark:border-neutral-700 rounded-xl hover:border-primary/30 hover:bg-primary/5 transition-all group">
+          <div>
+            <div class="flex items-center gap-2">
+              <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                Irfan Hidayatullah
+              </p>
+              <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+            </div>
+            <p class="text-neutral-dark dark:text-white font-bold mt-0.5">+62 896-1644-8947</p>
+          </div>
+          <span
+            class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_outward</span>
+        </a>
+        <a data-wa-number="6285809020940" href="https://wa.me/6285809020940" target="_blank" rel="noopener noreferrer"
+          class="flex justify-between items-center p-4 border border-slate-100 dark:border-neutral-700 rounded-xl hover:border-primary/30 hover:bg-primary/5 transition-all group">
+          <div>
+            <div class="flex items-center gap-2">
+              <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                Abdurohman Nasir
+              </p>
+              <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+            </div>
+            <p class="text-neutral-dark dark:text-white font-bold mt-0.5">+62 858-0902-0940</p>
+          </div>
+          <span
+            class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_outward</span>
+        </a>
+        <a data-wa-number="6281393470768" href="https://wa.me/6281393470768" target="_blank" rel="noopener noreferrer"
+          class="flex justify-between items-center p-4 border border-slate-100 dark:border-neutral-700 rounded-xl hover:border-primary/30 hover:bg-primary/5 transition-all group">
+          <div>
+            <div class="flex items-center gap-2">
+              <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                Almas Maulidi
+              </p>
+              <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+            </div>
+            <p class="text-neutral-dark dark:text-white font-bold mt-0.5">+62 813-9347-0768</p>
+          </div>
+          <span
+            class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_outward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+      (function () {
+        'use strict';
+
+        // ===== 1. SCROLL REVEAL (IntersectionObserver) =====
+        const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+        if ('IntersectionObserver' in window) {
+          const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                revealObserver.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+          revealElements.forEach(el => revealObserver.observe(el));
+        } else {
+          revealElements.forEach(el => el.classList.add('revealed'));
+        }
+
+        // ===== 2. HERO STAGGER ANIMATION =====
+        const heroEls = document.querySelectorAll('[data-hero-anim]');
+        heroEls.forEach((el, i) => {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(30px)';
+          setTimeout(() => {
+            el.style.transition = 'opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1)';
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+          }, 200 + i * 150);
+        });
+
+        // ===== 3. COUNTER ANIMATION =====
+        const counters = document.querySelectorAll('[data-count]');
+        function animateCounter(el) {
+          const target = el.getAttribute('data-count');
+          const suffix = el.getAttribute('data-suffix') || '';
+          const isDecimal = target.includes('.');
+          const numTarget = parseFloat(target);
+          const duration = 2000;
+          const startTime = performance.now();
+
+          function update(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+            const current = numTarget * eased;
+            el.textContent = (isDecimal ? current.toFixed(1) : Math.floor(current)) + suffix;
+            if (progress < 1) requestAnimationFrame(update);
+          }
+          requestAnimationFrame(update);
+        }
+
+        if (counters.length) {
+          const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                counterObserver.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.5 });
+          counters.forEach(el => counterObserver.observe(el));
+        }
+
+        // ===== 4. FAQ ACCORDION =====
+        document.querySelectorAll('.faq-toggle').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('.faq-icon');
+            const isOpen = answer.classList.contains('open');
+
+            // Close all others
+            document.querySelectorAll('.faq-answer.open').forEach(a => {
+              a.style.maxHeight = null;
+              a.classList.remove('open');
+              a.previousElementSibling.querySelector('.faq-icon')?.classList.remove('rotated');
+            });
+
+            if (!isOpen) {
+              answer.classList.add('open');
+              answer.style.maxHeight = answer.scrollHeight + 'px';
+              icon?.classList.add('rotated');
+            }
+          });
+        });
+
+        // ===== 5. NAVBAR SCROLL EFFECT =====
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+          header.classList.toggle('scrolled', window.scrollY > 30);
+        });
+
+        // ===== 6. SMOOTH NAV LINKS =====
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+          a.addEventListener('click', e => {
+            const target = document.querySelector(a.getAttribute('href'));
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          });
+        });
+
+        // ===== 7. TILT/PARALLAX on Hero Calc =====
+        const heroCalc = document.querySelector('[data-tilt]');
+        if (heroCalc) {
+          heroCalc.addEventListener('mousemove', e => {
+            const rect = heroCalc.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            heroCalc.style.transform = `perspective(800px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
+          });
+          heroCalc.addEventListener('mouseleave', () => {
+            heroCalc.style.transform = 'perspective(800px) rotateY(0deg) rotateX(0deg)';
+          });
+          heroCalc.style.transition = 'transform 0.2s ease-out';
+        }
+
+        // ===== 8. WA MODAL =====
+        window.toggleWAModal = function () {
+          const modal = document.getElementById('wa-modal');
+          if (modal.classList.contains('hidden')) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+          } else {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+          }
+        };
+
+        window.closeWAModalOnBackdrop = function (event) {
+          if (event.target === event.currentTarget) {
+            toggleWAModal();
+          }
+        };
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') {
+            const modal = document.getElementById('wa-modal');
+            if (!modal.classList.contains('hidden')) {
+              toggleWAModal();
+            }
+          }
+        });
+
+      })();
+  </script>
+</body>
+
+</html>
