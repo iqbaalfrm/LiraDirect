@@ -951,7 +951,7 @@
           let liveRate = null; // TRY per 1 IDR
           let idrPerTry = null; // IDR per 1 TRY
           let direction = 'IDR_TO_TRY'; // or 'TRY_TO_IDR'
-          const MARKUP = 10; // markup per TRY in IDR
+          const MARKUP = 0; // no markup, real-time rate
 
           function formatNumber(num) {
             return new Intl.NumberFormat('id-ID').format(Math.round(num));
@@ -977,9 +977,9 @@
             if (!idrPerTry) return;
             const rateWithMarkup = idrPerTry + MARKUP;
             if (direction === 'IDR_TO_TRY') {
-              rateDisplay.textContent = `1 TRY = Rp ${formatNumber(rateWithMarkup)} (Live +${MARKUP})`;
+              rateDisplay.textContent = `1 TRY = Rp ${formatNumber(rateWithMarkup)} (Live)`;
             } else {
-              rateDisplay.textContent = `1 TRY = Rp ${formatNumber(rateWithMarkup)} (Live +${MARKUP})`;
+              rateDisplay.textContent = `1 TRY = Rp ${formatNumber(rateWithMarkup)} (Live)`;
             }
           }
 
