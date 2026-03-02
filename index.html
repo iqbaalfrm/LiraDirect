@@ -93,33 +93,35 @@
             Solusi pembayaran tercepat dan terpercaya untuk bisnis pariwisata Anda di Turki. Kurs kompetitif dengan
             biaya transparan tanpa biaya tersembunyi.
           </p>
-          <!-- Exchange Calculator -->
+          <!-- Exchange Calculator (LIVE) -->
           <div data-hero-anim data-tilt
             class="bg-white dark:bg-neutral-800 p-2 rounded-2xl shadow-2xl border border-primary/10 max-w-lg mx-auto hover-lift">
             <div class="flex flex-col sm:flex-row items-stretch gap-2">
               <div class="flex-1 relative group">
-                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">IDR</span>
-                <input
+                <span id="calc-from-label"
+                  class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">IDR</span>
+                <input id="calc-from"
                   class="w-full pl-14 pr-4 py-4 rounded-xl border-none bg-background-light dark:bg-background-dark focus:ring-2 focus:ring-primary transition-all font-semibold"
-                  placeholder="10.000.000" type="number" />
+                  placeholder="10.000.000" type="number" value="10000000" />
               </div>
               <div class="flex items-center justify-center p-2">
-                <span
-                  class="material-symbols-outlined text-primary bg-primary/10 rounded-full p-2 hover:rotate-180 transition-transform duration-500 cursor-pointer">swap_horiz</span>
+                <button id="calc-swap"
+                  class="material-symbols-outlined text-primary bg-primary/10 rounded-full p-2 hover:rotate-180 transition-transform duration-500 cursor-pointer">swap_horiz</button>
               </div>
               <div class="flex-1 relative group">
-                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">TRY</span>
-                <input
+                <span id="calc-to-label"
+                  class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">TRY</span>
+                <input id="calc-to"
                   class="w-full pl-14 pr-4 py-4 rounded-xl border-none bg-background-light dark:bg-background-dark font-semibold"
-                  readonly="" type="number" value="20618" />
+                  readonly type="text" value="—" />
               </div>
             </div>
             <div class="mt-2 p-4 flex items-center justify-between text-sm">
               <div class="flex items-center gap-2 text-slate-500">
-                <span class="material-symbols-outlined text-base">info</span>
-                <span data-i18n="hero.kurs">Kurs: 1 TRY = Rp 485</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
+                <span id="calc-rate-display">Memuat kurs live...</span>
               </div>
-              <button class="text-primary font-bold hover:underline" data-i18n="hero.detail">Lihat Detail Biaya</button>
+              <span id="calc-last-update" class="text-xs text-slate-400"></span>
             </div>
           </div>
         </div>
@@ -936,8 +938,100 @@
           });
           heroCalc.style.transition = 'transform 0.2s ease-out';
         }
+        // ===== 8. LIVE EXCHANGE RATE CALCULATOR =====
+        (function initLiveCalc() {
+          const fromInput = document.getElementById('calc-from');
+          const toInput = document.getElementById('calc-to');
+          const fromLabel = document.getElementById('calc-from-label');
+          const toLabel = document.getElementById('calc-to-label');
+          const swapBtn = document.getElementById('calc-swap');
+          const rateDisplay = document.getElementById('calc-rate-display');
+          const lastUpdate = document.getElementById('calc-last-update');
 
-        // ===== 8. WA MODAL =====
+          let liveRate = null; // TRY per 1 IDR
+          let idrPerTry = null; // IDR per 1 TRY
+          let direction = 'IDR_TO_TRY'; // or 'TRY_TO_IDR'
+          const MARKUP = 10; // markup per TRY in IDR
+
+          function formatNumber(num) {
+            return new Intl.NumberFormat('id-ID').format(Math.round(num));
+          }
+
+          function convert() {
+            if (!idrPerTry) return;
+            const val = parseFloat(fromInput.value);
+            if (!val || val <= 0) { toInput.value = '—'; return; }
+
+            const rateWithMarkup = idrPerTry + MARKUP;
+            let result;
+            if (direction === 'IDR_TO_TRY') {
+              result = val / rateWithMarkup;
+              toInput.value = formatNumber(result);
+            } else {
+              result = val * rateWithMarkup;
+              toInput.value = formatNumber(result);
+            }
+          }
+
+          function updateRateDisplay() {
+            if (!idrPerTry) return;
+            const rateWithMarkup = idrPerTry + MARKUP;
+            if (direction === 'IDR_TO_TRY') {
+              rateDisplay.textContent = `1 TRY = Rp ${formatNumber(rateWithMarkup)} (Live +${MARKUP})`;
+            } else {
+              rateDisplay.textContent = `1 TRY = Rp ${formatNumber(rateWithMarkup)} (Live +${MARKUP})`;
+            }
+          }
+
+          async function fetchRate() {
+            try {
+              rateDisplay.textContent = 'Memuat kurs live...';
+              const res = await fetch('https://open.er-api.com/v6/latest/TRY');
+              const data = await res.json();
+              if (data.result === 'success' && data.rates && data.rates.IDR) {
+                idrPerTry = data.rates.IDR; // e.g. ~485
+                liveRate = 1 / idrPerTry;
+                updateRateDisplay();
+                convert();
+                const now = new Date();
+                lastUpdate.textContent = `Update: ${now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' })}`;
+              } else {
+                rateDisplay.textContent = 'Gagal memuat kurs. Coba refresh.';
+              }
+            } catch (err) {
+              console.error('Rate fetch error:', err);
+              // Fallback rate
+              idrPerTry = 485;
+              liveRate = 1 / idrPerTry;
+              updateRateDisplay();
+              rateDisplay.textContent += ' (fallback)';
+              convert();
+            }
+          }
+
+          // Input event
+          fromInput.addEventListener('input', convert);
+
+          // Swap direction
+          swapBtn.addEventListener('click', () => {
+            direction = direction === 'IDR_TO_TRY' ? 'TRY_TO_IDR' : 'IDR_TO_TRY';
+            const tmpLabel = fromLabel.textContent;
+            fromLabel.textContent = toLabel.textContent;
+            toLabel.textContent = tmpLabel;
+            fromInput.value = '';
+            toInput.value = '—';
+            fromInput.placeholder = direction === 'IDR_TO_TRY' ? '10.000.000' : '1.000';
+            updateRateDisplay();
+            fromInput.focus();
+          });
+
+          // Fetch on load
+          fetchRate();
+          // Auto-refresh every 10 minutes
+          setInterval(fetchRate, 600000);
+        })();
+
+        // ===== 9. WA MODAL =====
         window.toggleWAModal = function () {
           const modal = document.getElementById('wa-modal');
           if (modal.classList.contains('hidden')) {
