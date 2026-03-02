@@ -66,8 +66,8 @@ const translations = {
 
       "nav-link-faq": "FAQ",
       "hero-badge-text": "TEROBOSAN PERTAMA DI INDONESIA",
-      "hero-title-line-1": "Transfer Lira untuk Agen Tour & Hotel di Turki,",
-      "hero-title-line-2": "Aman, Cepat, dan Praktis",
+      "hero-title-line-1": "Transfer Lira untuk",
+      "hero-title-line-2": "Agen Tour & Hotel di Turki",
       "hero-subtitle":
         "Layanan transfer Lira untuk kebutuhan Agen Tour (LA) dan hotel di Turki dengan proses cepat, transparan, dan aman.",
       "hero-trust-safe": "Transaksi Aman",
@@ -91,7 +91,7 @@ const translations = {
       "feature-title-2": "Efisiensi Waktu",
       "feature-title-3": "Amanah & Terjamin",
       "feature-desc-1":
-        "Minimalisir risiko kehilangan uang tunai dengan transfer langsung ke rekening Agen Tour (LA) atau hotel secara aman tanpa harus datang membawa uang cash.",
+        "Minimalisir risiko kehilangan uang tunai dengan transfer langsung ke rekening Agen Tour (LA) atau hotel secara aman.",
       "feature-desc-2":
         "Fokus pada tour dan bisnis Anda. Tanpa antre, tanpa birokrasi rumit. Transaksi efisien, transparan, dan terjaga.",
       "feature-desc-3":
@@ -197,8 +197,8 @@ const translations = {
       "nav-link-testimonials": "Reviews",
       "nav-link-faq": "FAQ",
       "hero-badge-text": "VERIFIED LIRA TRANSFER SERVICE",
-      "hero-title-line-1": "Pay Agen Tour (LA) & Hotel in Turki,",
-      "hero-title-line-2": "Safe, Fast, and Practical",
+      "hero-title-line-1": "Lira Transfer for",
+      "hero-title-line-2": "Tour Agents & Hotels in Türkiye",
       "hero-subtitle":
         "Lira transfer service for Agen Tour (LA) and hotel payments in Turki with a fast, transparent, and secure process.",
       "hero-trust-safe": "Secure Transactions",
@@ -512,8 +512,8 @@ const translations = {
 
       "nav-link-faq": "FAQ",
       "hero-badge-text": "PERKHIDMATAN PEMINDAHAN LIRA DISAHKAN",
-      "hero-title-line-1": "Transfer Lira untuk Agen Tour & Hotel di Turki,",
-      "hero-title-line-2": "Selamat, Pantas, dan Praktikal",
+      "hero-title-line-1": "Transfer Lira untuk",
+      "hero-title-line-2": "Agen Tour & Hotel di Turki",
       "hero-subtitle":
         "Perkhidmatan pemindahan Lira untuk keperluan Agen Tour (LA) dan hotel di Turki dengan proses pantas, telus, dan selamat.",
       "hero-trust-safe": "Transaksi Selamat",
@@ -643,8 +643,8 @@ translations.tr = {
     "nav-link-features": "Hizmetler",
     "nav-link-steps": "Surec",
 
-    "hero-title-line-1": "Turkiye'de Acenta Turu (LA) ve Otel Odemeleri,",
-    "hero-title-line-2": "Guvenli, Hizli ve Pratik",
+    "hero-title-line-1": "Lira Transfer:",
+    "hero-title-line-2": "Tur Acentasi & Otel Ödemeleri",
     "hero-subtitle":
       "Turkiye'de Acenta Turu (LA) ve otel odemeleri icin hizli, seffaf ve guvenli Lira transfer hizmeti.",
     "hero-trust-safe": "Guvenli Islemler",
@@ -948,12 +948,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ===== COUNTER ANIMATION (easeOutExpo) =====
   let counterTriggered = false;
-  const statsBar = document.querySelector(".stats-bar");
-  if (statsBar) {
+  const countUpElements = document.querySelectorAll(".count-up");
+  if (countUpElements.length > 0) {
     const counterObs = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting && !counterTriggered) {
         counterTriggered = true;
-        document.querySelectorAll(".count-up").forEach((counter) => {
+        countUpElements.forEach((counter) => {
           const target = +counter.getAttribute("data-target");
           const suffix = counter.getAttribute("data-suffix") || "";
           const duration = 1500;
@@ -972,8 +972,8 @@ document.addEventListener("DOMContentLoaded", () => {
           requestAnimationFrame(animate);
         });
       }
-    });
-    counterObs.observe(statsBar);
+    }, { threshold: 0.3 });
+    counterObs.observe(countUpElements[0]);
   }
 });
 
