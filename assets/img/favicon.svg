@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- LiraDirect Icon/Logo -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" /> <!-- Gold/Primary -->
+      <stop offset="100%" style="stop-color:#a78452;stop-opacity:1" /> <!-- Darker Gold -->
+    </linearGradient>
+  </defs>
+  
+  <rect width="512" height="512" rx="120" fill="url(#grad1)" />
+  
+  <!-- L shape for Lira with Turkish/Lira inspired symbol -->
+  <path d="M 180 380 L 180 120 C 180 100 195 90 210 100 C 220 105 225 115 225 125 L 225 350 L 330 350 C 350 350 360 365 350 380 C 345 390 335 395 325 395 L 180 395 Z" fill="#ffffff" />
+  
+  <!-- Direct/Transfer accent lines (representing speed/transfer) -->
+  <path d="M 280 150 L 380 150 C 395 150 405 165 395 180 C 390 190 380 195 370 195 L 280 195 C 265 195 255 180 265 165 C 270 155 280 150 280 150 Z" fill="#ffffff" opacity="0.8" />
+  <path d="M 280 230 L 340 230 C 355 230 365 245 355 260 C 350 270 340 275 330 275 L 280 275 C 265 275 255 260 265 245 C 270 235 280 230 280 230 Z" fill="#ffffff" opacity="0.6" />
+</svg>
