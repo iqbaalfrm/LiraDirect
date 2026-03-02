@@ -49,22 +49,25 @@
             class="text-primary">Direct</span></h2>
       </div>
       <nav class="hidden md:flex items-center gap-10">
-        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#layanan">Layanan</a>
-        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#kurs">Kurs</a>
-        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#testimoni">Testimoni</a>
-        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#faq">FAQ</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#layanan"
+          data-i18n="nav.layanan">Layanan</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#kurs" data-i18n="nav.kurs">Kurs</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#testimoni"
+          data-i18n="nav.testimoni">Testimoni</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="#faq" data-i18n="nav.faq">FAQ</a>
       </nav>
       <div class="flex items-center gap-4">
-        <div
+        <div id="lang-switcher"
           class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-neutral-800 cursor-pointer transition-colors group">
           <span
             class="material-symbols-outlined text-xl text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">language</span>
-          <span
+          <span id="lang-label"
             class="text-sm font-bold text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">ID</span>
           <span class="material-symbols-outlined text-sm text-slate-400">expand_more</span>
         </div>
         <button onclick="toggleWAModal()"
-          class="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-6 py-2.5 rounded-lg transition-all shadow-lg shadow-primary/20">
+          class="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-6 py-2.5 rounded-lg transition-all shadow-lg shadow-primary/20"
+          data-i18n="nav.hubungi">
           Hubungi Kami
         </button>
       </div>
@@ -78,13 +81,15 @@
         <div class="max-w-3xl space-y-8 text-center">
           <div data-hero-anim
             class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-bold uppercase tracking-wider">
-            <span class="material-symbols-outlined text-sm">verified_user</span> Terpercaya sejak 2018
+            <span class="material-symbols-outlined text-sm">verified_user</span> <span data-i18n="hero.badge">Terpercaya
+              sejak 2018</span>
           </div>
-          <h1 data-hero-anim
-            class="text-4xl lg:text-6xl font-extrabold leading-[1.1] text-neutral-dark dark:text-white">
+          <h1 data-hero-anim class="text-4xl lg:text-6xl font-extrabold leading-[1.1] text-neutral-dark dark:text-white"
+            data-i18n="hero.title">
             Transfer Lira untuk Agen <span class="text-primary">Tour &amp; Hotel</span> di Turki
           </h1>
-          <p data-hero-anim class="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
+          <p data-hero-anim class="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto leading-relaxed"
+            data-i18n="hero.subtitle">
             Solusi pembayaran tercepat dan terpercaya untuk bisnis pariwisata Anda di Turki. Kurs kompetitif dengan
             biaya transparan tanpa biaya tersembunyi.
           </p>
@@ -112,9 +117,9 @@
             <div class="mt-2 p-4 flex items-center justify-between text-sm">
               <div class="flex items-center gap-2 text-slate-500">
                 <span class="material-symbols-outlined text-base">info</span>
-                <span>Kurs: 1 TRY = Rp 485</span>
+                <span data-i18n="hero.kurs">Kurs: 1 TRY = Rp 485</span>
               </div>
-              <button class="text-primary font-bold hover:underline">Lihat Detail Biaya</button>
+              <button class="text-primary font-bold hover:underline" data-i18n="hero.detail">Lihat Detail Biaya</button>
             </div>
           </div>
         </div>
@@ -134,19 +139,23 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div class="text-center space-y-1 reveal delay-1">
             <p class="text-3xl font-extrabold text-neutral-dark dark:text-white" data-count="500" data-suffix="M+">0</p>
-            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Transaksi (IDR)</p>
+            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest" data-i18n="stats.transaksi">
+              Transaksi (IDR)</p>
           </div>
           <div class="text-center space-y-1 border-l border-primary/20 reveal delay-2">
             <p class="text-3xl font-extrabold text-neutral-dark dark:text-white" data-count="120" data-suffix="+">0</p>
-            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Partner Agen</p>
+            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest" data-i18n="stats.partner">Partner
+              Agen</p>
           </div>
           <div class="text-center space-y-1 border-l border-primary/20 reveal delay-3">
             <p class="text-3xl font-extrabold text-neutral-dark dark:text-white" data-count="4.9" data-suffix="/5">0</p>
-            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Rating Layanan</p>
+            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest" data-i18n="stats.rating">Rating
+              Layanan</p>
           </div>
           <div class="text-center space-y-1 border-l border-primary/20 reveal delay-4">
             <p class="text-3xl font-extrabold text-neutral-dark dark:text-white">24/7</p>
-            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest">Customer Support</p>
+            <p class="text-sm text-slate-500 font-medium uppercase tracking-widest" data-i18n="stats.support">Customer
+              Support</p>
           </div>
         </div>
       </div>
@@ -155,8 +164,10 @@
     <section class="bg-white dark:bg-background-dark pt-12 pb-24" id="layanan">
       <div class="max-w-7xl mx-auto px-6 lg:px-12">
         <div class="text-center max-w-2xl mx-auto mb-20 space-y-4 reveal">
-          <h2 class="text-primary font-bold uppercase tracking-widest text-sm">Mengapa LiraDirect?</h2>
-          <p class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white">Standar Baru Pembayaran B2B
+          <h2 class="text-primary font-bold uppercase tracking-widest text-sm" data-i18n="why.badge">Mengapa LiraDirect?
+          </h2>
+          <p class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white" data-i18n="why.title">Standar
+            Baru Pembayaran B2B
             Travel ke Turki</p>
         </div>
         <div class="grid md:grid-cols-3 gap-10">
@@ -166,8 +177,9 @@
               class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white group-hover:rotate-6 transition-all duration-500">
               <span class="material-symbols-outlined text-3xl">trending_down</span>
             </div>
-            <h3 class="text-xl font-bold mb-3">Kurs Kompetitif</h3>
-            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Kami menawarkan kurs harian yang bersaing
+            <h3 class="text-xl font-bold mb-3" data-i18n="why.kurs.title">Kurs Kompetitif</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="why.kurs.desc">Kami menawarkan kurs
+              harian yang bersaing
               langsung dengan rate pasar untuk memastikan profitabilitas bisnis Anda tetap terjaga.</p>
           </div>
           <div
@@ -176,8 +188,9 @@
               class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white group-hover:rotate-6 transition-all duration-500">
               <span class="material-symbols-outlined text-3xl">verified_user</span>
             </div>
-            <h3 class="text-xl font-bold mb-3">Keamanan Terjamin</h3>
-            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Setiap transaksi diproses melalui kanal
+            <h3 class="text-xl font-bold mb-3" data-i18n="why.aman.title">Keamanan Terjamin</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="why.aman.desc">Setiap transaksi
+              diproses melalui kanal
               perbankan resmi dengan enkripsi tingkat tinggi untuk keamanan data dan dana Anda.</p>
           </div>
           <div
@@ -186,8 +199,9 @@
               class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white group-hover:rotate-6 transition-all duration-500">
               <span class="material-symbols-outlined text-3xl">visibility</span>
             </div>
-            <h3 class="text-xl font-bold mb-3">Biaya Transparan</h3>
-            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Tidak ada kejutan. Semua biaya administrasi
+            <h3 class="text-xl font-bold mb-3" data-i18n="why.transparan.title">Biaya Transparan</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="why.transparan.desc">Tidak ada
+              kejutan. Semua biaya administrasi
               dan kurs konversi ditampilkan secara jujur di depan sebelum Anda melakukan transfer.</p>
           </div>
         </div>
@@ -205,8 +219,9 @@
     <section class="py-24 bg-background-light dark:bg-neutral-900/50">
       <div class="max-w-7xl mx-auto px-6 lg:px-12">
         <div class="text-center max-w-2xl mx-auto mb-20 space-y-4 reveal">
-          <h2 class="text-primary font-bold uppercase tracking-widest text-sm">Proses Mudah</h2>
-          <p class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white">Cara Kerja Transfer Kami</p>
+          <h2 class="text-primary font-bold uppercase tracking-widest text-sm" data-i18n="flow.badge">Proses Mudah</h2>
+          <p class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white" data-i18n="flow.title">Cara
+            Kerja Transfer Kami</p>
         </div>
         <div class="grid md:grid-cols-3 gap-12 lg:gap-20 justify-items-center">
           <!-- Step 1 -->
@@ -216,8 +231,9 @@
               <span class="text-white font-extrabold text-xl">1</span>
             </div>
             <div class="space-y-3">
-              <h3 class="text-2xl font-bold text-neutral-dark dark:text-white">Konsultasi</h3>
-              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <h3 class="text-2xl font-bold text-neutral-dark dark:text-white" data-i18n="flow.step1.title">Konsultasi
+              </h3>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="flow.step1.desc">
                 Hubungi tim kami via WhatsApp. Sampaikan kebutuhan nominal lira dan tujuan transfer.
               </p>
             </div>
@@ -229,8 +245,9 @@
               <span class="text-white font-extrabold text-xl">2</span>
             </div>
             <div class="space-y-3">
-              <h3 class="text-2xl font-bold text-neutral-dark dark:text-white">Pembayaran Agen Tour (LA)</h3>
-              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <h3 class="text-2xl font-bold text-neutral-dark dark:text-white" data-i18n="flow.step2.title">Pembayaran
+                Agen Tour (LA)</h3>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="flow.step2.desc">
                 Lakukan transfer Rupiah ke rekening resmi kami dengan kurs kompetitif dan transparan.
               </p>
             </div>
@@ -242,8 +259,8 @@
               <span class="text-white font-extrabold text-xl">3</span>
             </div>
             <div class="space-y-3">
-              <h3 class="text-2xl font-bold text-neutral-dark dark:text-white">Tuntas</h3>
-              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <h3 class="text-2xl font-bold text-neutral-dark dark:text-white" data-i18n="flow.step3.title">Tuntas</h3>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="flow.step3.desc">
                 Lira dikirim ke penerima. Bukti transfer valid langsung kami kirimkan sebagai konfirmasi.
               </p>
             </div>
@@ -267,14 +284,16 @@
           <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] -mr-32 -mt-32 rounded-full"></div>
           <div class="relative flex flex-col lg:flex-row items-center gap-10">
             <div class="flex-1 space-y-6 text-center lg:text-left reveal-left">
-              <div class="inline-block bg-primary px-4 py-1.5 rounded-full text-white text-xs font-bold uppercase">
-                Spesial Promo</div>
-              <h2 class="text-3xl lg:text-5xl font-extrabold text-white leading-tight">Butuh Lira Cash di Istanbul?</h2>
-              <p class="text-slate-300 text-lg">Selain transfer bank, kami menyediakan layanan pengiriman uang tunai
+              <div class="inline-block bg-primary px-4 py-1.5 rounded-full text-white text-xs font-bold uppercase"
+                data-i18n="cash.badge">Spesial Promo</div>
+              <h2 class="text-3xl lg:text-5xl font-extrabold text-white leading-tight" data-i18n="cash.title">Butuh Lira
+                Cash di Istanbul?</h2>
+              <p class="text-slate-300 text-lg" data-i18n="cash.desc">Selain transfer bank, kami menyediakan layanan
+                pengiriman uang tunai
                 langsung ke kantor agen atau hotel Anda di Turki.</p>
               <button
                 class="bg-white hover:bg-slate-100 text-neutral-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 hover:shadow-2xl active:scale-95"
-                onclick="toggleWAModal()">Hubungi WhatsApp</button>
+                onclick="toggleWAModal()" data-i18n="cash.btn">Hubungi WhatsApp</button>
             </div>
             <div class="flex-shrink-0 reveal-right">
               <div
@@ -291,20 +310,23 @@
     <section class="py-24 bg-white dark:bg-background-dark" id="faq">
       <div class="max-w-4xl mx-auto px-6">
         <div class="text-center mb-16 space-y-4 reveal">
-          <h2 class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white">Pertanyaan Sering Diajukan
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-neutral-dark dark:text-white" data-i18n="faq.title">
+            Pertanyaan Sering Diajukan
           </h2>
-          <p class="text-slate-500">Pelajari lebih lanjut tentang bagaimana kami membantu operasional travel Anda.</p>
+          <p class="text-slate-500" data-i18n="faq.subtitle">Pelajari lebih lanjut tentang bagaimana kami membantu
+            operasional travel Anda.</p>
         </div>
         <div class="space-y-4">
           <div
             class="group border border-slate-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover-lift reveal delay-1">
             <button class="faq-toggle w-full flex items-center justify-between p-6 text-left focus:outline-none">
-              <span class="font-bold text-lg dark:text-white group-hover:text-primary transition-colors">Berapa lama
+              <span class="font-bold text-lg dark:text-white group-hover:text-primary transition-colors"
+                data-i18n="faq.q1">Berapa lama
                 waktu transfer ke bank Turki?</span>
               <span
                 class="material-symbols-outlined text-primary faq-icon transition-transform duration-300">expand_more</span>
             </button>
-            <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-400">
+            <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-400" data-i18n="faq.a1">
               Rata-rata transfer kami selesai dalam waktu 5-30 menit setelah dana kami terima di Indonesia, asalkan
               dilakukan selama jam operasional bank Turki.
             </div>
@@ -312,12 +334,13 @@
           <div
             class="group border border-slate-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover-lift reveal delay-2">
             <button class="faq-toggle w-full flex items-center justify-between p-6 text-left focus:outline-none">
-              <span class="font-bold text-lg dark:text-white group-hover:text-primary transition-colors">Apakah ada
+              <span class="font-bold text-lg dark:text-white group-hover:text-primary transition-colors"
+                data-i18n="faq.q2">Apakah ada
                 limit harian untuk transfer?</span>
               <span
                 class="material-symbols-outlined text-primary faq-icon transition-transform duration-300">expand_more</span>
             </button>
-            <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-400">
+            <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-400" data-i18n="faq.a2">
               Untuk agen terverifikasi, kami memberikan limit harian yang cukup fleksibel hingga Rp 500 Juta per hari.
               Untuk jumlah lebih besar, tim kami akan membantu melalui jalur prioritas.
             </div>
@@ -325,12 +348,13 @@
           <div
             class="group border border-slate-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all hover-lift reveal delay-3">
             <button class="faq-toggle w-full flex items-center justify-between p-6 text-left focus:outline-none">
-              <span class="font-bold text-lg dark:text-white group-hover:text-primary transition-colors">Bank apa saja
+              <span class="font-bold text-lg dark:text-white group-hover:text-primary transition-colors"
+                data-i18n="faq.q3">Bank apa saja
                 yang didukung di Turki?</span>
               <span
                 class="material-symbols-outlined text-primary faq-icon transition-transform duration-300">expand_more</span>
             </button>
-            <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-400">
+            <div class="faq-answer px-6 pb-6 text-slate-600 dark:text-slate-400" data-i18n="faq.a3">
               Kami mendukung transfer ke semua bank komersial utama di Turki, termasuk Ziraat Bankası, VakıfBank, İş
               Bankası, Garanti BBVA, dan Akbank.
             </div>
@@ -351,31 +375,39 @@
             </div>
             <h2 class="text-xl font-extrabold tracking-tight">Lira<span class="text-primary">Direct</span></h2>
           </div>
-          <p class="text-slate-400 text-sm leading-relaxed">
+          <p class="text-slate-400 text-sm leading-relaxed" data-i18n="footer.desc">
             LiraDirect adalah platform remitansi khusus korporat yang berfokus pada efisiensi pembayaran antara agen
             perjalanan di Indonesia dan penyedia layanan di Turki.
           </p>
         </div>
         <div>
-          <h5 class="font-bold mb-6">Layanan</h5>
+          <h5 class="font-bold mb-6" data-i18n="footer.layanan">Layanan</h5>
           <ul class="space-y-4 text-sm text-slate-400">
-            <li><a class="hover:text-primary transition-colors" href="#">Transfer Lira B2B</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Lira Cash Delivery</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Konsultasi Bisnis Turki</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Partnership Program</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#" data-i18n="footer.s1">Transfer Lira B2B</a>
+            </li>
+            <li><a class="hover:text-primary transition-colors" href="#" data-i18n="footer.s2">Lira Cash Delivery</a>
+            </li>
+            <li><a class="hover:text-primary transition-colors" href="#" data-i18n="footer.s3">Konsultasi Bisnis
+                Turki</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#" data-i18n="footer.s4">Partnership Program</a>
+            </li>
           </ul>
         </div>
         <div>
-          <h5 class="font-bold mb-6">Perusahaan</h5>
+          <h5 class="font-bold mb-6" data-i18n="footer.perusahaan">Perusahaan</h5>
           <ul class="space-y-4 text-sm text-slate-400">
-            <li><a class="hover:text-primary transition-colors" href="#">Tentang Kami</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Hubungi Kami</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Kebijakan Privasi</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Syarat &amp; Ketentuan</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#" data-i18n="footer.tentang">Tentang Kami</a>
+            </li>
+            <li><a class="hover:text-primary transition-colors" href="#" data-i18n="footer.hubungi">Hubungi Kami</a>
+            </li>
+            <li><a class="hover:text-primary transition-colors" href="#" data-i18n="footer.privasi">Kebijakan
+                Privasi</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#" data-i18n="footer.syarat">Syarat &amp;
+                Ketentuan</a></li>
           </ul>
         </div>
         <div>
-          <h5 class="font-bold mb-6">Media Sosial</h5>
+          <h5 class="font-bold mb-6" data-i18n="footer.sosmed">Media Sosial</h5>
           <div class="flex gap-4">
             <a class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary transition-all"
               href="#">
@@ -393,10 +425,11 @@
         </div>
       </div>
       <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-        <p class="text-xs text-slate-500">© 2025 LiraDirect. Seluruh Hak Cipta Dilindungi.</p>
+        <p class="text-xs text-slate-500" data-i18n="footer.copyright">© 2025 LiraDirect. Seluruh Hak Cipta Dilindungi.
+        </p>
         <div class="flex gap-6 text-xs text-slate-500">
-          <p>Berlisensi oleh OJK Indonesia</p>
-          <p>Compliance with BDDK Turkey</p>
+          <p data-i18n="footer.ojk">Berlisensi oleh OJK Indonesia</p>
+          <p data-i18n="footer.bddk">Compliance with BDDK Turkey</p>
         </div>
       </div>
     </div>
@@ -720,16 +753,16 @@
       <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary/80 to-primary"></div>
       <div class="flex justify-between items-start mb-5">
         <div>
-          <p class="text-primary text-xs font-bold uppercase tracking-widest mb-1">
+          <p class="text-primary text-xs font-bold uppercase tracking-widest mb-1" data-i18n="wa.badge">
             WhatsApp Support
           </p>
-          <h3 class="text-xl font-bold text-neutral-dark dark:text-white">
+          <h3 class="text-xl font-bold text-neutral-dark dark:text-white" data-i18n="wa.title">
             Pilih Admin Layanan
           </h3>
-          <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-1" data-i18n="wa.subtitle1">
             Pilih salah satu admin kami di bawah.
           </p>
-          <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">
+          <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5" data-i18n="wa.subtitle2">
             Respons cepat, pilih admin yang sedang tersedia.
           </p>
         </div>
@@ -758,7 +791,7 @@
           <div>
             <div class="flex items-center gap-2">
               <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400">
-                Abdurohman Nasir
+                Abdurrohman Nashir
               </p>
               <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
             </div>
@@ -936,6 +969,7 @@
 
       })();
   </script>
+  <script src="assets/js/i18n.js"></script>
 </body>
 
 </html>
